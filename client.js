@@ -44,7 +44,7 @@ function showScifiMovie() {
 }        
 
 $("#submit").click(function() { 
-   $option = $("select[name='moviePrefernce']").val();
+ var  $option = $("select[name='moviePrefernce']").val();
   
   if($option == "comedy"){
     $("#movieSuggestions").empty();
@@ -172,5 +172,8 @@ function loadScifi() {
  return{
    "scifiMovies" : scifiMovies
  }
-  }
+}
+
+
+                                  
 
